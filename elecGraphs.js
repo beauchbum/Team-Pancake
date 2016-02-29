@@ -2,6 +2,7 @@ google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(elecDay);
 
 function elecDay() {
+		document.getElementById("usageInTimeframe").innerHTML = "Today you used 9000 kWh of electricity";
         var data = google.visualization.arrayToDataTable([
           ['Day', 'Electricity Usage'],
           ['2/28',  1000],
@@ -25,6 +26,7 @@ function elecDay() {
       }
 	  
 function elecWeek() {
+		document.getElementById('usageInTimeframe').innerHTML = "Last week you used 9000 kWh of electricity";
         var data = google.visualization.arrayToDataTable([
           ['Week', 'Electricity Usage'],
           ['2/7-2/13',  5000],
@@ -49,6 +51,7 @@ function elecWeek() {
       }
 
 function elecMonth() {
+		document.getElementById('usageInTimeframe').innerHTML = "Last month you used 9000 kWh of electricity";
         var data = google.visualization.arrayToDataTable([
           ['Month', 'Electricity Usage'],
           ['November',  20000],

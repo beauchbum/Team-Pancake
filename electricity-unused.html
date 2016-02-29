@@ -25,30 +25,20 @@
       <a href="login.html" class="waves-effect right">Logout</a>
 		<div class="row">
 			<div class="container left">
-				<h4> Electricity Use for "username"</h4>
-				<div id="curve_chart" style="width: 900px; height: 500px"></div>
-				<a class='dropdown-button btn' href='#' data-activates='dropdown1'>&#9660; Select Timeframe</a>
-				  <ul id='dropdown1' class='dropdown-content'>
-					<li><a href="javascript:elecDay()">Days</a></li>
-					<li><a href="javascript:elecWeek()">Weeks</a></li>
-					<li><a href="javascript:elecMonth()">Months</a></li>
-				  </ul>
-				  <div class="container"><br></div>
-					  <div id="usageInTimeframe">
-						Today you used 9000 kWh of electricity
-						<a href="">edit</a>
-					  </div>
-					  <div>
-						 <h5>How can I reduce my electricity usage?</h5>
-						 <li>Instead of using the dishwasher, hand wash your dishes.</li>
-						 <li>If you are not using electronics, don't leave them plugged in.</li>
-						 <li>Air conditioners use a lot of electricity, so try and limit their usage whenever possible.</li>
-					  </div>
-					  <div>
-						<h5>Why is it important to reduce electricity usage?</h5>
-						<li>Wasting electricity means that power plants have to make more for the same benefit, resulting in more pollution.</li>
-						<li>It's often difficult to notice that electritity is being used, so being proactive goes a long way.</li>
-					  </div>
+				<h4> Electricity for "username" </h4>
+				  <!-- let user knoew this page is not in use currently -->
+				<div>
+				  You are currently not tracking your electricity.
+				  <br>
+				  To begin tracking please complete the information below:
+				</div>
+				<br>
+				<!-- user enters data to begin using page -->
+				<div>
+					Enter your electricity provider: <input type="text" name="elecProvider"><br>
+					Enter your billing code: <input ype="text" name="elecBillingCode">
+				</div>
+				<a class="btn" href="electricity.html">Submit</a>
 			</div>
 		</div>
 	</div>
