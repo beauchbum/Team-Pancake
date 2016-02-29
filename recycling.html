@@ -28,13 +28,12 @@
       <a href="login.html" class="waves-effect right">Logout</a>
 		
       <h4> Recycling for "username" </h4>
-      
-      <!-- Implement graph with <script> function() </script> -->
+      <!-- graph of trash vs recycling in timefram -->
+      <script> drawChart() </script>
+      <!-- Drop down selector for timefram -->
       <div>
-          <!-- Dropdown Trigger -->
         <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Select Timeframe</a>
 
-           <!-- Dropdown Structure -->
         <ul id='dropdown1' class='dropdown-content'>
           <li><a href="#!">Weeks</a></li>
           <li class='divider'></li>
@@ -42,29 +41,30 @@
           <li class="divider"></li>
           <li><a href="#!">Years</a></li>
         </ul>
+
       </div>
 
       <br>
-
+      <!-- restates the data you most recently entered -->
       <div>
         During the last week you threw away 12 pounds
       </div>
       <div>
         During the last week you recycled 15 pounds 
       </div>
-
+      <!-- enter new data -->
       <div>
         Enter how many pounds of trash you threw away this week: <input type="text" name="trash"><br>
         Enter how many pounds you recycled this week: <input ype="text" name="recycled">
       </div>
-
+      <!-- advice on trash reduction -->
       <div>
          <h5>How can I reduce my trash production?</h5>
          <li>Use reusable containers whenever possible</li>
          <li>Use reuseable canvas bags when grocery shopping</li>
          <li>Buy more food that does not come heavily packaged</li>
       </div>
-     
+     <!-- effects of trash -->
       <div>
         <h5>Why is it important to reduce waste?</h5>
         <li>Trash contributes to landfills and the decimation of natural habitats</li>
