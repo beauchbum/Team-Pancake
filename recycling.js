@@ -1,4 +1,4 @@
-function drawWeeks() {
+function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Week', 'Thrown Away', 'Recycled'],
           ['1',  1000,      400],
