@@ -1,8 +1,8 @@
 google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawWeeks);
 /* holds weights for the graphs */
-var T = 0;
-var R = 0;
+var T = 12;
+var R = 15;
 /* How much was done last week */
 var recPounds = document.getElementById("recPounds");
 var trashPounds = document.getElementById("trashPounds");
@@ -11,11 +11,15 @@ var trash = document.getElementById("trash");
 var recycle = document.getElementById("recycle");
 /* Submit button */
 var submit = document.getElementById("submit");
+
 /* Updates last weeks data to this weeks */
 submit.onclick = function() {
-  recPounds.innerHTML = recycle.innerHTML;
-  trashPounds.innerHTML = trash.innerHTML;
-}
+  recPounds.innerHTML = "Last week you recycled " + recycle.value + " pounds of recyclables.";
+  trashPounds.innerHTML = "Last week you threw away " + trash.value + " pounds of trash.";
+  T = trash.value;
+  R = recycle.value;
+}   
+
 /* functions that create the graphs */
       function drawWeeks(T,R) {
         var data = google.visualization.arrayToDataTable([
@@ -40,10 +44,10 @@ submit.onclick = function() {
        function drawMonths(T,R) {
         var data = google.visualization.arrayToDataTable([
           ['Month', 'Thrown Away', 'Recycled'],
-          ['November',  60,     40],
-          ['December',  44,     64],
-          ['January',  52,     56],
-          ['February',  36+T,     45+R]
+          ['November',  50,     45],
+          ['December',  48,     60],
+          ['January',  48,     52],
+          ['February',  T*4,     4*R]
         ]);
 
         var options = {
@@ -56,4 +60,3 @@ submit.onclick = function() {
 
         chart.draw(data, options);
       }
-        

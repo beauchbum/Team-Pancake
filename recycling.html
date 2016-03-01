@@ -28,16 +28,16 @@
       <a href="login.html" class="waves-effect right green-text text-darken-4">Logout</a>
 		
       <h4> Recycling for "username" </h4>
-      <!-- graph of trash vs recycling in timefram -->
+      <!-- graph of trash vs recycling in timeframe -->
        <div id="curve_chart" style="width: 900px; height: 500px"></div>
-      <!-- Drop down selector for timefram -->
+      <!-- Drop down selector for timeframe -->
       <div>
         <a class='dropdown-button btn green darken-4' href='#' data-activates='dropdown1'>Select Timeframe</a>
 
         <ul id='dropdown1' class='dropdown-content'>
-          <li><a href="javascript:drawWeeks()">Weeks</a></li>
+          <li><a href="javascript:drawWeeks(T,R)">Weeks</a></li>
           <li class='divider'></li>
-          <li><a href="javascript:drawMonths()">Months</a></li>
+          <li><a href="javascript:drawMonths(T,R)">Months</a></li>
         </ul>
       </div>
 
@@ -52,8 +52,8 @@
       <br>
       <!-- enter new data -->
       <div class="col l4">
-        Enter how many pounds of trash you threw away this week: <input type="text" name="trash" id="trash"><br>
-        Enter how many pounds you recycled this week: <input ype="text" name="recycled" id="recycle">
+        Enter how many pounds of trash you threw away this week: <input type="text" id="trash"><br>
+        Enter how many pounds you recycled this week: <input ype="text" id="recycle">
       </div>
       <!-- button to submit data from text boxes -->
       <div>
