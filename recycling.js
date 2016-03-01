@@ -22,7 +22,7 @@ submit.onclick = function() {
           ['Week', 'Thrown Away', 'Recycled'],
           ['2/7-2/13',  15,     10],
           ['2/14-2/20',  11,     16],
-          ['2/21-2/27',  13,     14,
+          ['2/21-2/27',  13,     14],
           ['2/28-3/5',  T,     R]
         ]);
 
@@ -42,7 +42,7 @@ submit.onclick = function() {
           ['Month', 'Thrown Away', 'Recycled'],
           ['November',  60,     40],
           ['December',  44,     64],
-          ['January',  52,     56,
+          ['January',  52,     56],
           ['February',  36+T,     45+R]
         ]);
 
