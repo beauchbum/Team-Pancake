@@ -29,36 +29,36 @@
 		
       <h4> Recycling for "username" </h4>
       <!-- graph of trash vs recycling in timefram -->
-      <script> drawChart() </script>
        <div id="curve_chart" style="width: 900px; height: 500px"></div>
       <!-- Drop down selector for timefram -->
       <div>
         <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Select Timeframe</a>
 
         <ul id='dropdown1' class='dropdown-content'>
-          <li><a href="recycling.html!">Weeks</a></li>
+          <li><a href="javascript:drawWeeks()">Weeks</a></li>
           <li class='divider'></li>
-          <li><a href="#!">Months</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Years</a></li>
+          <li><a href="javascript:drawMonths()">Months</a></li>
         </ul>
-
       </div>
 
       <br>
       <!-- restates the data you most recently entered -->
-      <div>
+      <div id="trashPounds">
         During the last week you threw away 12 pounds
       </div>
-      <div>
+      <div id="recPounds">
         During the last week you recycled 15 pounds 
       </div>
       <br>
       <!-- enter new data -->
       <div class="col l4">
-        Enter how many pounds of trash you threw away this week: <input type="text" name="trash"><br>
-        Enter how many pounds you recycled this week: <input ype="text" name="recycled">
+        Enter how many pounds of trash you threw away this week: <input type="text" name="trash" id="trash"><br>
+        Enter how many pounds you recycled this week: <input ype="text" name="recycled" id="recycle">
       </div>
+      <!-- button to submit data from text boxes -->
+      <div>
+       <button id="submit">Enter Data</button>
+     </div>
       <!-- advice on trash reduction -->
       <div>
          <h5>How can I reduce my trash production?</h5>
@@ -75,6 +75,7 @@
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-    <script src="calculator.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="recycling.js"></script>
   </body>
 </html>
