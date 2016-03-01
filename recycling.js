@@ -12,13 +12,15 @@ var recycle = document.getElementById("recycle");
 /* Submit button */
 var submit = document.getElementById("submit");
 
-/* Updates last weeks data to this weeks */
 submit.onclick = function() {
   recPounds.innerHTML = "Last week you recycled " + recycle.value + " pounds of recyclables.";
   trashPounds.innerHTML = "Last week you threw away " + trash.value + " pounds of trash.";
   T = trash.value;
   R = recycle.value;
+
+  drawWeeks(T,R);
 } 
+/* Updates last weeks data to this weeks */
 
 /* functions that create the graphs */
       function drawWeeks(T,R) {
@@ -26,7 +28,7 @@ submit.onclick = function() {
           ['Week', 'Thrown Away', 'Recycled'],
           ['2/7-2/13',  15,     10],
           ['2/14-2/20',  11,     16],
-          ['2/21-2/27',  13,     14],
+          ['2/21-2/27',  9,     18],
           ['2/28-3/5',  T,     R]
         ]);
 
@@ -46,7 +48,7 @@ submit.onclick = function() {
           ['Month', 'Thrown Away', 'Recycled'],
           ['November',  50,     45],
           ['December',  48,     60],
-          ['January',  48,     52],
+          ['January',  35,     71],
           ['February',  T*4,     4*R]
         ]);
 
