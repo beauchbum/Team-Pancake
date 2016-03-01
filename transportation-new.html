@@ -3,8 +3,9 @@
   <head>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	<script src = "transportation-new.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Electricity</title>
+    <title>Transportation</title>
   
   </head>
   <body class="grey lighten-3 green-text text-darken-4">
@@ -25,25 +26,41 @@
       <a href="login.html" class="waves-effect right green-text text-darken-4">Logout</a>
 		<div class="row">
 			<div class="container left">
-				<h4> Water for "username" </h4>
+				<h4> Transportation for "Username" </h4>
 				  <!-- let user knoew this page is not in use currently -->
 				<div>
-				  You are currently not tracking your water.
+				  You are currently not tracking your transportation.
 				  <br>
 				  To begin tracking please complete the information below:
+			  <form action="#">
+
+				<p>
+				  <input name="group1" type="radio" id="test2"/>
+				  <label for="test2">Android</label>
+				</p>
+				<p>
+				  <input name="group1" type="radio" id="test1" />
+				  <label for="test1">Apple</label>
+				</p>
+				<p>
+				  <input class="group1" name="group1" type="radio" id="test3"  />
+				  <label for="test3">Windows</label>
+				</p>
+
+			  </form>
 				</div>
 				<br>
 				<!-- user enters data to begin using page -->
 				<div>
-					Enter your water provider: <input type="text" name="waterProvider"><br>
-					Enter your billing code: <input ype="text" name="waterBillingCode">
+					Enter your phone number: <input type="text" name="phonenumb"><br>
+					<div id = "ID">Enter your Google ID:</div> <input id="ID" type="text" name="userido">
+					<div id = "password">Enter your Google Password:</div> <input id="password" type="text" name ="password">
 				</div>
-				<a class="btn green darken-4" href="water.html">Submit</a>
+				<a class="btn green darken-4" href="transportation-existing.html">Submit</a>
 			</div>
 		</div>
 	</div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script type="text/javascript" src="waterGraphs.js"></script>
 	<script src="homepage.js"></script>
