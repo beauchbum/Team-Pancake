@@ -2,6 +2,7 @@ google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(elecDay);
 
 function elecDay() {
+		document.getElementById("usageInTimeframe").innerHTML = "Today you emitted 5 kilograms of carbon";
         var data = google.visualization.arrayToDataTable([
           ['Day', 'Electricity Usage'],
           ['2/28',  6.5],
@@ -25,6 +26,7 @@ function elecDay() {
       }
 	  
 function elecWeek() {
+		document.getElementById("usageInTimeframe").innerHTML = "Last week you emitted 19 kilograms of carbon";
         var data = google.visualization.arrayToDataTable([
           ['Week', 'Electricity Usage'],
           ['2/7-2/13',  35],
@@ -49,6 +51,7 @@ function elecWeek() {
       }
 
 function elecMonth() {
+		document.getElementById("usageInTimeframe").innerHTML = "Last month you emitted 145 kilograms of carbon";
         var data = google.visualization.arrayToDataTable([
           ['Month', 'Electricity Usage'],
           ['November',  135],

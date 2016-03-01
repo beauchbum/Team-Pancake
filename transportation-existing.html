@@ -3,47 +3,40 @@
   <head>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-	<link type="text/css" rel="stylesheet" href="transportation-existing.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Transportation</title>
   
   </head>
-   <body class="grey lighten-3 green-text text-darken-4">
+  <body class="grey lighten-3 green-text text-darken-4">
     <header>
       <div class="row">
         <ul id="slide-out" class="side-nav fixed">
           <li><img class="responsive-img" src="logo.gif"></li>
-          <li><a href="existing_user_homepage.html" class="waves-effect waves-green">Home</a></li>
-          <li><a href="water.html" class="waves-effect waves-green">Water</a></li>
-          <li><a href="electricity.html" class="waves-effect waves-green">Electricity</a></li>
-          <li><a href="transportation-existing.html" class="waves-effect waves-green">Transportation</a></li>
-          <li><a href="recycling.html" class="waves-effect waves-green">Recycling</a></li>
+          <li><a href="existing_user_homepage.html" class="waves-effect waves-green green-text text-darken-4">Home</a></li>
+          <li><a href="water.html" class="waves-effect waves-green green-text text-darken-4">Water</a></li>
+          <li><a href="electricity.html" class="waves-effect waves-green green-text text-darken-4">Electricity</a></li>
+          <li><a href="transportation-existing.html" class="waves-effect waves-green green-text text-darken-4">Transportation</a></li>
+          <li><a href="recycling.html" class="waves-effect waves-green green-text text-darken-4">Recycling</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
       </div>
     </header>
-	  <div class="row">
+	<div class="container right">
       <a href="login.html" class="waves-effect right green-text text-darken-4">Logout</a>
-      <h4 align = "center">Transportation for "Username"</h4>  
-	</div>
-	
-	    <div class="row">
-
-		<div class="container" id = "graph">
-			<div id="curve_chart" style="width: 900px; height: 500px"></div>
-			<div class="container">
-			<a class='dropdown-button btn green darken-4' id="dropbutton" href='#' data-activates='dropdown1'>&#9660; Select Timeframe</a>
-			  <ul id='dropdown1' class='dropdown-content'>
-				<li><a href="javascript:elecDay()">Days</a></li>
-				<li><a href="javascript:elecWeek()">Weeks</a></li>
-				<li><a href="javascript:elecMonth()">Months</a></li>
-			  </ul
-			  </div>
-			  </div>
-				  <div class="container" id = "information"><br>
+		<div class="row">
+			<div class="container left">
+				<h4> Transportation for "username"</h4>
+				<div id="curve_chart" style="width: 900px; height: 500px"></div>
+				<a class='dropdown-button btn green darken-4' href='#' data-activates='dropdown1'>&#9660; Select Timeframe</a>
+				  <ul id='dropdown1' class='dropdown-content'>
+					<li><a href="javascript:elecDay()">Days</a></li>
+					<li><a href="javascript:elecWeek()">Weeks</a></li>
+					<li><a href="javascript:elecMonth()">Months</a></li>
+				  </ul>
+				  <div class="container"><br></div>
 					  <div id="usageInTimeframe">
 						Today you emitted 13 kilograms of Carbon
-						
+						<a href="">edit</a>
 					  </div>
 					  <div>
 						 <h5>How can I reduce my carbon footprint?</h5>
@@ -54,15 +47,13 @@
 					  <div>
 						<h5>Why is it important to reduce carbon emissions?</h5>
 						<li>Climate change has been significantly linked to greenhouse gases, with CO2 being chief among them</li>
-						<li>Current trends in global warming will displace almost a billion people and cause catastrophic economic damage	</li>
+						<li>Current trends in global warming will displace almost a billion people and cause catastrophic economic damage</li>
 					  </div>
-			</div>			  
-			  
+			</div>
 		</div>
-
+	</div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript" src="transGraphs.js"></script>
-  </body>
-</html>
+	<script src="homepage.js"></script>
