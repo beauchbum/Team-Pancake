@@ -18,7 +18,7 @@ submit.onclick = function() {
   trashPounds.innerHTML = "Last week you threw away " + trash.value + " pounds of trash.";
   T = trash.value;
   R = recycle.value;
-}   
+} 
 
 /* functions that create the graphs */
       function drawWeeks(T,R) {
