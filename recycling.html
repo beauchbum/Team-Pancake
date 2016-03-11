@@ -22,16 +22,16 @@
       </div>
     </header>
 		
-    <div class="container right">
+    <div class="row container right">
     
       <a href="login.html" class="waves-effect right green-text text-darken-4">Logout</a>
 		
-      <h4> Recycling for "username" </h4>
+      <h4 class="col"> Recycling for "username" </h4>
       <!-- graph of trash vs recycling in timeframe -->
-       <div id="curve_chart" style="width: 900px; height: 500px"></div>
+      <div class="col"><div id="curve_chart" style="width: 900px; height: 500px"></div></div>
       <!-- Drop down selector for timeframe -->
-      <div>
-        <a class='dropdown-button btn green darken-4' href='#' data-activates='dropdown1'>Select Timeframe</a>
+      <div class="col">
+        <br><a class='dropdown-button btn green darken-4' href='#' data-activates='dropdown1'>Select Timeframe</a>
 
         <ul id='dropdown1' class='dropdown-content'>
           <li><a href="javascript:drawWeeks(T,R)">Weeks</a></li>
@@ -42,31 +42,29 @@
 
       <br>
       <!-- restates the data you most recently entered -->
-      <div id="trashPounds">
-        During the last week you threw away 12 pounds
+      <div class="col l10" id="trashPounds">
+        <br><br>During the last week you threw away 12 pounds
       </div>
-      <div id="recPounds">
-        During the last week you recycled 15 pounds 
+      <div class="col l10" id="recPounds">
+        During the last week you recycled 15 pounds<br>
       </div>
       <br>
+
       <!-- enter new data -->
       <div class="col l4">
-        Enter how many pounds of trash you threw away this week: <input type="text" id="trash"><br>
-        Enter how many pounds you recycled this week: <input ype="text" id="recycle">
-      </div>
-      <!-- button to submit data from text boxes -->
-      <div>
+        <br>Enter how many pounds of trash you threw away this week: <input type="text" id="trash"><br>
+        Enter how many pounds you recycled this week: <input type="text" id="recycle"><br>
        <button class="btn green darken-4" id="submit">Enter Data</button>
-     </div>
+     </div> 
       <!-- advice on trash reduction -->
-      <div>
-         <h5>How can I reduce my trash production?</h5>
+      <div class="col l10">
+         <br><br><h5>How can I reduce my trash production?</h5>
          <li>Use reusable containers whenever possible</li>
          <li>Use reuseable canvas bags when grocery shopping</li>
          <li>Buy more food that does not come heavily packaged</li>
       </div>
      <!-- effects of trash -->
-      <div>
+      <div class="col l10">
         <h5>Why is it important to reduce waste?</h5>
         <li>Trash contributes to landfills and the decimation of natural habitats</li>
         <li>Most trash spends years sitting in a landfill before it even starts to decompose</li>
